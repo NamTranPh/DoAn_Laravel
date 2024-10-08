@@ -1,0 +1,112 @@
+/* All */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+}
+
+.img-head img{
+    margin-top: 75px;
+}
+@media(max-width: 750px){
+    .img-head img{
+        margin-top: 110px;
+    }
+}
+.color-text{
+    color: #42210b;
+}
+.container-fluid {
+    margin-top: -50px;
+}
+.container-fluid .payments{
+    padding: 70px 0px;
+}
+
+/* Img Head */
+.img-head img{
+    width: 100%;
+    height: 65%;
+}
+
+.fonm-payments h3{
+    text-align: center;
+}
+.form-payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.form-payment .col-md-6{
+    padding: 0 10px;
+}
+
+.form-payment h5.title{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+/* Input Form */
+.inputBox{
+    margin: 15px 0;
+}
+
+.inputBox span{
+    margin: 5px;
+    display: block;
+}
+
+.inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.inputBox input:focus{
+    border: 1px solid #000;
+}
+
+/* Img Card */
+
+.card-payments{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-card{
+    width: 70px;
+    height: 41px;
+    margin-right: 10px;
+}
+
+/* Buttom */
+.buttom-payment button{
+    width: 20%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #42210b;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.buttom-payment button:hover{
+    background: #714020;
+}
+
+@media(max-width: 750px){
+    .form-payment{
+        display: flex;
+        flex-direction: column;
+    }
+    .fonm-payments{
+        margin-left: 0px;
+    }
+}

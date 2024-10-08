@@ -1,0 +1,79 @@
+.user-detail-container{
+    width: 100%;
+}
+.row{
+    justify-content: center;
+    margin: 0;
+    
+}
+.user-info{
+    border-bottom: 1px dotted #e5e5e5;
+    margin-bottom: 10px ;
+}
+.user-info h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.user-detail-info{
+    border-bottom: 1px dotted #e5e5e5;
+    margin-bottom: 20px;
+}   
+.user-detail-info a{
+    text-decoration: none;
+}
+.user-detail-info .btn-edit{
+    border: none;
+    outline: none;
+    background-color: #3e9135;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 140px;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+.user-detail-info .btn-edit:hover{
+    background-color: #2a6b23;
+    cursor: pointer;
+}
+.user-detail-info .log-out{
+    border: none;
+    outline: none;
+    background-color: #eb1f1f;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 140px;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+.user-detail-info .log-out:hover{
+    background-color: #982727;
+    cursor: pointer;
+}
+.list-order-user{
+    margin-top: 20px;
+}
+.list-order-user h3{
+    font-size: 20px;
+}
+.list-order-user{
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #e5e5e5;
+}
+.list-order-user table td img{
+    width: 100%;
+}
+@media (max-width: 768px){
+    .account{
+        text-align: left;
+        /* padding: 0; */
+        
+    }
+    .account-user-heading{
+        padding-left: 0;
+    }
+    .option-user{
+        padding-left: 0;
+    }
+}

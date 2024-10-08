@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #fff;
+}
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+    margin-top: 10px;
+}
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 46px 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.navmenu a:hover{
+    color: #42210b;
+    border-bottom: 2px solid #42210b;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #42210b;
+}
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+section{
+    padding: 5% 10%;
+}
+.awe-section-1{
+    margin-top: 75px;
+}
+
+/* Form-search */
+.form-search{
+    display: flex;
+    border: 1px solid #42210b;
+    height: 50%;
+    border-radius: 25px;
+    font-size: 13px;
+    box-shadow: 0 2px 3px 1px #5d4c40; 
+}
+
+.form-search input{
+    background-color: #fff;
+    float: left;
+    height: 50%;
+    display: block;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 10px 40px 10px 20px;
+    border: none;
+}
+
+input:focus{/* css khi click bỏ border */
+    outline: none;
+    border: none;
+}
+
+/* Drop-search */
+.dropdown-search{
+    position: relative;
+}
+
+.form{
+    background-color: #fff;
+    right: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    border: 1px solid #70645c;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 9;
+}
+
+.dropdown-search:hover .form{
+    opacity: 1;
+    top: 30px;
+    visibility: visible;
+}
+
+.button-search{
+    width: 30px;
+    height: 50%;
+    padding-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin: auto;
+}
+
+/* Drop User */
+.dropdown-user{
+    position: relative;
+}
+
+.dropdown-user:hover .form-user{
+    opacity: 1;
+    top: 30px;
+    visibility: visible;
+}
+.dropdown-user .form-user a{
+    color: #42210b;
+}
+/* contact-section */
+
+
+
+/* Responsive-css */
+@media(max-width:1400px ){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+    .main-text h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-text p{
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-btn{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right:-100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        transition: all .42s;
+        margin-top: 0px;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+        padding: 20px 20px;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+}
+
+@media(min-width: 1400px){
+    #menu-icon{
+        display: none;
+    }
+}

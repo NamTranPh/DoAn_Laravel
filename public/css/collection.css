@@ -1,0 +1,145 @@
+/* Chung */
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+}
+.collection{
+    padding: 70px 0px;
+}
+
+.img-head img{
+    margin-top: 75px;
+}
+img{
+    width: 100%;
+}
+.color-text{
+    color: #42210b;
+}
+
+.fs-text-content{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.collection-title, .collection-content{
+    width: 100%;
+}
+
+/* Title */
+.collection .title-collection{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.collection .title-collection h2{
+    margin: 25px 0;
+    text-transform: capitalize;
+    font-weight: 550;
+}
+
+.collection .title-collection h3, .collection .content-collection h5{
+    margin-top: 30px;
+    font-weight: 550;
+}
+
+
+/* ImgContent */
+.img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-collection{
+    width: 50%;
+    height: 35%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.textDown-Img{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Link */
+.collection .social{
+    width: 100%;
+    clear: both;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.collection .social i{
+    background-color: #fff;
+    color: #bdbdbd;
+    margin: 0 5px;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    border:1px solid #bdbdbd;
+    border-radius: 50%;
+    line-height: 31px;
+    text-align: center; 
+}
+
+.collection .social i:hover{
+    color: #42210b;
+    background-color: #fff;
+    border:1px solid #42210b;
+    transition: 1s ease;
+    /* transform: rotate(360deg); - quay 360*/
+}
+
+@media screen and(max-width:1200px){
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-collection{
+        width: 40%;
+        height: 30%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    
+    .textDown-Img{
+        margin-top: 8px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and(max-width:992px){
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-collection{
+        width: 35%;
+        height: 25%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    
+    .textDown-Img{
+        margin-top: 8px;
+        font-size: 7px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 750px){
+    .img-head img{
+        margin-top: 110px;
+    }
+}

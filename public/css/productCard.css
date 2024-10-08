@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.col-3-productCard{
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #42210b;
+}
+
+.card{
+    padding: 0;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover{
+    transition: all 1s ease;
+    box-shadow: 3px 3px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card-img{
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+}
+
+.imgProductCard:hover{
+    transform: scale(1.2);
+}
+
+.imgProductCard{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* Buttom */
+.view-btn{
+    width: 100%;
+    /* background-color: rgba(124, 80, 26, 0.855);
+    color: #fff; */
+    background-color: rgba(255, 255, 255, 0.855);
+    color: #5d3b24;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.view-btn:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0);
+    color: #42210b; */
+    background-color: rgba(124, 80, 26, 0.855);
+    color: #fff;
+    transition: all ease 0.4s;
+}
+
+.card-body .card-title{
+    text-align: center;
+}
+.card:hover .card-img .imgProductCard{
+    filter: opacity(80%);
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

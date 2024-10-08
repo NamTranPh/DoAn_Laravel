@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img-head img{
+    margin-top: 75px;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+}
+
+.container-about-us{
+    padding: 70px 0px;
+}
+
+.color-text{
+    color: #42210b;
+}
+
+.fs-text-content{
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutUs-left, .aboutUs-right{
+    width: 100%;
+}
+
+/* Title */
+.container-about-us .aboutUs-right .title-aboutUs{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container-about-us .aboutUs-right .title-aboutUs h1{
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #42210b;
+    font-weight: 600;
+}
+
+.container-about-us .title-aboutUs h1::after{
+    content: "";
+    height: 2px;
+    width: 120px;
+    background-color: #42210b;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+/*  */
+
+/* Content */
+.img-aboutUs{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.content-about-us .article .button a{
+    padding: 8px 25px;
+    background-color: #42210b;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+/*  */
+
+/*  */
+.container-about-us .social{
+    width: 100%;
+    clear: both;
+    margin-top: 30px;
+    /* text-align: center; */
+    display: inline-block;
+}
+
+.container-about-us .social i{
+    background-color: #fff;
+    color: #bdbdbd;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #bdbdbd;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+.container-about-us .social i:hover{
+    color: #42210b;
+    background-color: #fff;
+    border:1px solid #42210b;
+    transition: 1s ease;
+}
+
+@media screen and (max-width:768px) {
+    .container-about-us .social i{
+        font-size: 19px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+}
+@media(max-width: 750px){
+    .img-head img{
+        margin-top: 110px;
+    }
+}
